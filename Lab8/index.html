@@ -44,10 +44,10 @@
 	</div>
   <script>
   // You'll be inserting your JS code to initialize your map here
-  mapboxgl.accessToken = 'YOUR-MAPBOX-TOKEN';
+  mapboxgl.accessToken = 'pk.eyJ1IjoiaGg3NTgiLCJhIjoiY2xuMXo5bjQxMDJ5YzJrbGpvbXZudTVudSJ9.SzlG3WInkn7aWBEYPJkw0A';
   const map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/iamwfx/cl9519asg003414pl56w7ov95', // replace this with your style URL
+    style: 'mapbox://styles/hh758/clnb2oxm807hp01ph5taph6yv', // replace this with your style URL
     center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
     zoom: 13,
     // maxZoom: 22,
@@ -58,12 +58,12 @@
     // Give your layer's source a nickname you'll remember easily.
     map.addSource('sandyLayer',{
       'type':'vector',
-      'url': 'mapbox://iamwfx.bpjzmy2b'
+      'url': 'mapbox://hh758.ckhcynaa'
     });
 
     map.addSource('nychaLayer',{
       'type':'vector',
-      'url': 'mapbox://iamwfx.28ut4nij'
+      'url': 'mapbox://hh758.3f41ic51'
     });
 
     // add a new layer with your polygons
@@ -72,7 +72,7 @@
       'id':'nychaBuildings',
       'type':'fill',
       'source':'nychaLayer',
-      'source-layer':'Map_of_NYCHA_Developments-7i6vok',
+      'source-layer':'Map_of_NYCHA_Developments-3qgdxt',
       'paint':{
         'fill-color':'red',
         'fill-opacity': 0.5
@@ -83,7 +83,7 @@
       'id':'floodZones',
       'type':'fill',
       'source':'sandyLayer',
-      'source-layer':'Sandy_Inundation_Zone-4qcajo',
+      'source-layer':'Sandy_Inundation_Zone-cmkd01',
       'paint':{
         'fill-color':'#00158f',
         'fill-opacity': 0.5
